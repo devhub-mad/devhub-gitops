@@ -1,0 +1,23 @@
+# Default values for cicd.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+app:
+  name: devhub-orders-backend
+  namespace: devhub
+  cluster: .apps.cluster-6bzjl.6bzjl.sandbox1121.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/devhub-backend
+  org: devhub-mad
+  name: devhub-backend
+
+image:
+  host: 
+  name: devhub/orders-backend
+  tag: 
+
+pipelineStorage:
+  pvcSize: 2Gi
+  storageClassName: ""
